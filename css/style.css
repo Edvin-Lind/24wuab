@@ -45,22 +45,13 @@ main {
 }
 
 .background-img {
-  background-image: linear-gradient(black, black), url(/img/AdobeStock_573399878_Preview.jpeg), 
-  linear-gradient(black, black), url(/img/AdobeStock_573400114_Preview.jpeg), 
-  linear-gradient(black, black),url(/img/AdobeStock_42274287_Preview.jpeg);
+  background-image: url(/img/AdobeStock_573399878_Preview.jpeg) ,url(/img/AdobeStock_573400114_Preview.jpeg) ,url(/img/AdobeStock_42274287_Preview.jpeg);
   background-repeat: no-repeat;
   background-position: center, right, left;
   background-size: 33% 100%, 33% 100%, 33% 100%;
   height: 99%;
   width: 99%;
   background-blend-mode: saturation;
-}
-
-.card:hover .background-img {
-  filter: grayscale(0%);
-  transition: ease-in 0.1s;
-  width: 100%;
-  height: 100%;
 }
 
 main #card1,
