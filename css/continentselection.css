@@ -58,8 +58,8 @@ main {
 }
 
 main #card1,
-#card2,
-#card3 {
+main #card2,
+main #card3 {
   font-size: x-large;
   border-style: solid;
   width: 30%;
@@ -98,6 +98,12 @@ main #card1,
   background-image: url("./img/");
 }
 
+.card p {
+  font-size: medium;
+  color: grey;
+  padding: 5px;
+}
+
 a,
 a:hover {
   text-decoration: none;
@@ -109,4 +115,93 @@ footer {
   padding: 2%;
   color: rgb(182, 182, 182);
   background-color: black;
+}
+
+/* Hamburger Menu */
+.menu {
+  height: 100vh;
+  width: 80vw;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: -90vw;
+  transition: left 0.3s;
+  box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  display: none;
+  justify-content: space-evenly;
+}
+
+.menu-button {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-button i.material-icons {
+  font-size: 2.5rem;
+}
+
+.show {
+  left: 0;
+}
+
+.fade-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 5;
+}
+
+.fade-layer.visible {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .old-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    padding: 0 10px; /* Add padding to prevent cards from sticking to the edges */
+  }
+
+  main #card1,
+  main #card2,
+  main #card3 {
+    width: calc(
+      100% - 20px
+    ); /* Adjust width for smaller screens and consider padding */
+    max-width: 400px; /* Limit maximum width */
+    margin: 10px auto; /* Center-align the cards */
+    position: static; /* Reset position */
+    left: 0; /* Reset left position */
+    right: 0; /* Reset right position */
+    align-items: left;
+  }
+
+  .background-img {
+    display: none;
+    background-position: center; /* Adjust background image position */
+    background-size: cover; /* Ensure background image covers the element */
+  }
+
+  footer {
+    margin-top: 20px; /* Add space between cards and footer */
+  }
 }
