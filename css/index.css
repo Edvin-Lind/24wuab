@@ -119,7 +119,6 @@ footer {
   background-color: black;
 }
 
-/* Hamburger Menu */
 .menu {
   height: 100vh;
   width: 80vw;
@@ -137,6 +136,10 @@ footer {
 .menu-button {
   cursor: pointer;
   display: none;
+}
+
+.menu a {
+  font-size: x-large;
 }
 
 .menu-button i.material-icons {
@@ -173,5 +176,11 @@ footer {
 
   .menu-button {
     display: inline;
+  }
+
+  #landingpicture {
+    background-image: url(/img/AdobeStock_573399878_Preview.jpeg);
+
+    background-size: 50%, 100%;
   }
 }

@@ -44,7 +44,6 @@ main {
   position: relative;
 }
 
-/*byt europa bilden*/
 .background-img {
   background-image: url(/img/AdobeStock_573399878_Preview.jpeg),
     url(/img/AdobeStock_573400114_Preview.jpeg),
@@ -54,7 +53,6 @@ main {
   background-size: 33% 100%, 33% 100%, 33% 100%;
   height: 99%;
   width: 99%;
-  filter: grayscale(10%);
 }
 
 main #card1,
@@ -117,7 +115,6 @@ footer {
   background-color: black;
 }
 
-/* Hamburger Menu */
 .menu {
   height: 100vh;
   width: 80vw;
@@ -135,6 +132,10 @@ footer {
 .menu-button {
   cursor: pointer;
   display: none;
+}
+
+.menu a {
+  font-size: x-large;
 }
 
 .menu-button i.material-icons {
@@ -172,36 +173,35 @@ footer {
   .menu-button {
     display: inline;
   }
-}
-
-@media only screen and (max-width: 768px) {
   main {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center; /* Center-align cards */
-    padding: 0 10px; /* Add padding to prevent cards from sticking to the edges */
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
   }
 
   main #card1,
   main #card2,
   main #card3 {
-    width: calc(
-      100% - 20px
-    ); /* Adjust width for smaller screens and consider padding */
-    max-width: 400px; /* Limit maximum width */
-    margin: 10px auto; /* Center-align the cards */
-    position: static; /* Reset position */
-    left: 0; /* Reset left position */
-    right: 0; /* Reset right position */
+    width: calc(100% - 20px);
+    max-width: 400px;
+    margin: 10px auto;
+    position: static;
+    left: 0;
+    right: 0;
     align-items: left;
   }
 
   .background-img {
     display: none;
-    background-position: center; /* Adjust background image position */
-    background-size: cover; /* Ensure background image covers the element */
+    background-position: center;
+    background-size: cover;
   }
 
   footer {
-    margin-top: 20px; /* Add space between cards and footer */
+    margin-top: 20px;
+  }
+
+  main {
+    background-image: url("/img/AdobeStock_573399878_Preview.jpeg");
   }
 }

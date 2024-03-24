@@ -45,6 +45,7 @@ main {
   align-items: center;
   justify-content: space-evenly;
   position: relative;
+  background-image: url("/img/europeana-0GuL_hVwQHA-unsplash-EDITED.jpg");
 }
 
 .card p,
@@ -59,7 +60,6 @@ footer {
   background-color: black;
 }
 
-/* Hamburger Menu */
 .menu {
   height: 100vh;
   width: 80vw;
@@ -81,6 +81,10 @@ footer {
 
 .menu-button i.material-icons {
   font-size: 2.5rem;
+}
+
+.menu a {
+  font-size: x-large;
 }
 
 .show {
@@ -114,9 +118,7 @@ footer {
   .menu-button {
     display: inline;
   }
-}
 
-@media only screen and (max-width: 768px) {
   main {
     flex-direction: column;
     align-items: center;

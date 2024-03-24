@@ -13,6 +13,5 @@ function showMenu() {
 document.querySelectorAll(".content").forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("expanded");
-    // You can toggle additional information or styling changes here
   });
 });
