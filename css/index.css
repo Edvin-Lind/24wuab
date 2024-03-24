@@ -44,6 +44,8 @@ a {
   background-size: 50%, 100%;
   background-position: right;
   background-color: black;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
 }
 
 #landingpicture p,
@@ -54,7 +56,7 @@ a {
 }
 
 #landingpicture p {
-  padding-bottom: 20%;
+  padding-bottom: 5%;
   font-size: large;
   font-weight: lighter;
 }

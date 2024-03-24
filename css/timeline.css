@@ -38,8 +38,9 @@ a {
 
 main {
   margin-top: 1%;
+  margin-bottom: 1%;
   background-color: white;
-  height: 100vh;
+  height: auto;
 }
 
 footer {
@@ -107,9 +108,9 @@ footer {
 
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: rgb(204, 204, 204);
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 /* Responsive */
@@ -192,5 +193,9 @@ footer {
 
   .menu-button {
     display: inline;
+  }
+
+  main {
+    margin-right: 15%;
   }
 }

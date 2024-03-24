@@ -115,3 +115,33 @@ footer {
     display: inline;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  main #card1,
+  main #card2,
+  main #card3 {
+    width: calc(100% - 20px);
+    max-width: 400px;
+    margin: 10px auto;
+    position: static;
+    left: 0;
+    right: 0;
+    align-items: left;
+  }
+
+  .background-img {
+    display: none;
+    background-position: center;
+    background-size: cover;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
