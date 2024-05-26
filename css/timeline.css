@@ -1,37 +1,4 @@
-body {
-  height: 120vh;
-  margin: 0%;
-  width: 100%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.wrap {
-  display: block;
-}
-
-header {
-  text-transform: capitalize;
-  padding: 10px;
-  text-align: center;
-  font-size: small;
-}
-nav {
-  display: flex;
-  height: 7vh;
-  border-style: solid;
-  border-color: black;
-  background-color: white;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-nav a:hover {
-  transition: ease-in 0.1s;
-  text-decoration: underline;
-}
-
 a {
-  transition: ease-out 0.1s;
   text-decoration: none;
   color: black;
 }
@@ -41,13 +8,6 @@ main {
   margin-bottom: 1%;
   background-color: white;
   height: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 2%;
-  color: rgb(182, 182, 182);
-  background-color: black;
 }
 
 .timeline {
@@ -110,31 +70,6 @@ footer {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  .container::before {
-    left: 60px;
-  }
-
-  .right {
-    left: 0%;
-  }
-
-  .right::after,
-  .left::after {
-    left: 60px;
-  }
-
-  .timeline::after {
-    left: 80px;
-  }
-}
-
 .menu {
   height: 100vh;
   width: 80vw;
@@ -179,6 +114,31 @@ footer {
 
 .fade-layer.visible {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .right::after,
+  .left::after {
+    left: 60px;
+  }
+
+  .timeline::after {
+    left: 80px;
+  }
 }
 
 @media only screen and (max-width: 768px) {

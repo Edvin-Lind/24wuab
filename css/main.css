@@ -1,0 +1,43 @@
+body {
+  height: 120vh;
+  margin: 0%;
+  width: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.wrap {
+  display: block;
+}
+
+header {
+  text-transform: capitalize;
+  padding: 10px;
+  text-align: center;
+  font-size: small;
+}
+
+nav {
+  display: flex;
+  height: 7vh;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a:hover {
+  transition: ease-in 0.1s;
+  text-decoration: underline;
+}
+
+a {
+  transition: ease-out 0.1s;
+}
+
+footer {
+  text-align: center;
+  padding: 2%;
+  color: rgb(182, 182, 182);
+  background-color: black;
+}
